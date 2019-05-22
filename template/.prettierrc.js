@@ -3,9 +3,10 @@ module.exports = {
   semi: false,
   singleQuote: true,
   jsxSingleQuote: true,
-  jsxBracketSameLine: false,
+  jsxBracketSameLine: true,
   trailingComma: 'es5',
   bracketSpacing: true,
   proseWrap: 'never',
   useTabs: false,
+  arrowParens: 'avoid',
 }

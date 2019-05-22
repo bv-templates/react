@@ -10,13 +10,13 @@
  */
 
 module.exports = {
-	cdn: 'qiniu',
-  bucket: "leting-test",
-  accessKey: "82VX4460Rqik63MdkPyg91BVQmbJgEJsokm3DSaq",
-	secretKey: "oFWO9mt_dSVkFZLntnABBYSlEqxnWqOWeQEy5vub",
-	info: true,
-	glob: {
-		pattern: './dist/**/*.*',
-		ignore: ['./**/*.html', './**/*.map', './**/*.manifest.json'],
-	}
+  cdn: 'qiniu',
+  bucket: 'leting-test',
+  accessKey: '82VX4460Rqik63MdkPyg91BVQmbJgEJsokm3DSaq',
+  secretKey: 'oFWO9mt_dSVkFZLntnABBYSlEqxnWqOWeQEy5vub',
+  info: true,
+  glob: {
+    pattern: './dist/**/*.*',
+    ignore: ['./**/*.html', './**/*.map', './**/*.manifest.json'],
+  },
 }
