@@ -15,11 +15,13 @@
     "build:dll": "cross-env NODE_ENV=production webpack --config webpack.dll.config.js",
     "clone": "bv-git clone",
     "cdn": "bv-cdn upload",
-    "clean": "rimraf dist"
+    "clean": "rimraf dist",
+    "lint-staged": "lint-staged"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "lint-staged",
+      "pre-add": "lint-staged"
     }
   },
   "lint-staged": {
