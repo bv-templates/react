@@ -23,9 +23,13 @@
     }
   },
   "lint-staged": {
-    "**/*.{js,jsx}": [
+    "*.{js,jsx}": [
       "eslint --fix",
       "prettier --write",
+      "git add"
+    ],
+    "*.{css,scss,less}": [
+      "stylelint --fix",
       "git add"
     ]
   },
@@ -76,6 +80,10 @@
     "rimraf": "^2.6.3",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
+    "stylelint": "^10.0.1",
+    "stylelint-config-idiomatic-order": "^7.0.0",
+    "stylelint-config-standard": "^18.3.0",
+    "stylelint-scss": "^3.6.1",
     "uglifyjs-webpack-plugin": "^2.1.2",
     "url-loader": "^1.1.2",
     "webpack": "^4.30.0",
