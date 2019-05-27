@@ -33,5 +33,5 @@ module.exports = {
     "test/e2e/**/*": "e2e",
     "src/router/**/*": "router"
   },
-  "completeMessage": "To get started:\n\n  {{^inplace}}cd {{destDirName}}\n  {{/inPlace}}npm install\n  npm start\n\n"
+  "completeMessage": "To get started:\n\n  {{^inplace}}cd {{destDirName}}\n  {{/inplace}}npm install\n  npm start\n\n"
 }
