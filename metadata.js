@@ -28,8 +28,19 @@ module.exports = {
     type: "confirm",
     message: "Use ESLint to lint your code?"
   },
+  stylelint: {
+    type: "confirm",
+    message: "Use styleLint to lint your code?"
+  },
+  prettier: {
+    type: "confirm",
+    message: "Use prettier to format your code?"
+  },
   filters: {
     ".eslintrc.js": "eslint",
+    ".eslintignore": "eslint",
+    ".stylelintrc.js": "stylelint",
+    ".prettierrc.js": "prettier"
   },
   completeMessage: "To get started:\n\n  {{^inplace}}cd {{destDirName}}\n  {{/inplace}}npm install\n  npm start\n\n"
 }
