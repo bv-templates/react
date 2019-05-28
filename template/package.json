@@ -20,10 +20,22 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm clean"
+      "pre-commit": "lint-staged"
     }
   },
-  
+  "lint-staged": {
+    "*.{js,jsx}": [
+      {{#eslint}}
+      "eslint --fix",
+      {{/eslint}}
+      "prettier --write",
+      "git add"
+    ],
+    "*.{css,scss,less}": [
+      "stylelint --fix",
+      "git add"
+    ]
+  },
   "author": "{{ author }}",
   "license": "ISC",
   "dependencies": {
