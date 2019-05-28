@@ -23,18 +23,18 @@ module.exports = {
       type: "string",
       message: "Author"
     },
-  },
-  eslint: {
-    type: "confirm",
-    message: "Use ESLint to lint your code?"
-  },
-  stylelint: {
-    type: "confirm",
-    message: "Use styleLint to lint your code?"
-  },
-  prettier: {
-    type: "confirm",
-    message: "Use prettier to format your code?"
+    eslint: {
+      type: "confirm",
+      message: "Use ESLint to lint your code?"
+    },
+    stylelint: {
+      type: "confirm",
+      message: "Use styleLint to lint your code?"
+    },
+    prettier: {
+      type: "confirm",
+      message: "Use prettier to format your code?"
+    },
   },
   filters: {
     ".eslintrc.js": "eslint",
