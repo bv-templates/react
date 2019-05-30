@@ -27,7 +27,12 @@ module.exports = merge(
       rules: [
         // scss样式处理规则
         {
+          {{#if_eq csscompiler 'Sass'}}
           test: /\.scss$/,
+          {{/if_eq}}
+          {{#if_eq csscompiler 'Less'}}
+          test: /\.less$/,
+          {{/if_eq}}
           exclude: /(node_modules|bower_components)/,
           use: [
             {

@@ -23,10 +23,10 @@ module.exports = {
       type: "string",
       message: "Author"
     },
-    a: {
+    csscompiler: {
       type: 'list',
-      message: "Use ESLint and styleLint to lint your code?",
-      choices: ['less', 'sass']
+      message: "Choice CSS Compiler:",
+      choices: ['Less', 'Sass']
     },
     lint: {
       type: "confirm",
