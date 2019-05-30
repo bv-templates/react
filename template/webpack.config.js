@@ -49,7 +49,13 @@ module.exports = merge(
               },
             },
             'postcss-loader',
+            {{#if_eq csscompiler 'Sass'}}
             'sass-loader',
+            {{/if_eq}}
+            {{#if_eq csscompiler 'Less'}}
+            'less-loader',
+            {{/if_eq}}
+            
           ],
         },
         // js处理规则

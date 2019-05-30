@@ -9,7 +9,12 @@ if (process.env.NODE_ENV === 'development') {
   require('./index.html')
 
 }
-console.log(11112221231233)
+
+{{#if_eq csscompiler 'Sass'}}
 import './index.scss'
+{{/if_eq}}
+{{#if_eq csscompiler 'Less'}}
+import './index.less'
+{{/if_eq}}
 
 render(<Routers />, document.querySelector('#main'));
