@@ -23,6 +23,11 @@ module.exports = {
       type: "string",
       message: "Author"
     },
+    a: {
+      type: 'list',
+      message: "Use ESLint and styleLint to lint your code?",
+      choices: ['less', 'sass']
+    },
     lint: {
       type: "confirm",
       message: "Use ESLint and styleLint to lint your code?"
