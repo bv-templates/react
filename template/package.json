@@ -4,14 +4,20 @@
   "description": "{{ description }}",
   "main": "src/index.js",
   "scripts": {
-    "prestart": "npm run clean & npm run clone",
+    "prestart": "npm run clean{{#git}} & npm run clone{{/git}}",
     "start": "npm run build:dll && cross-env NODE_ENV=development webpack-dev-server",
-    "prebuild": "npm run clean & npm run clone",
+    "prebuild": "npm run clean{{#git}} & npm run clone{{/git}}",
     "build": "npm run build:dll && cross-env NODE_ENV=production webpack",
+    {{#cdn}}
     "postbuild": "npm run cdn",
+    {{/cdn}}
     "build:dll": "cross-env NODE_ENV=production webpack --config webpack.dll.config.js",
+    {{#git}}
     "clone": "bv-git clone",
+    {{/git}}
+    {{#cdn}}
     "cdn": "bv-cdn upload",
+    {{/cdn}}
     "clean": "rimraf dist"{{#lint}},
     "eslint": "eslint --fix \"./src/**/*.{js,jsx}\"",
     "stylelint": "stylelint --fix \"./src/**/*.{css,scss,less}\"",
