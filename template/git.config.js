@@ -12,9 +12,9 @@ module.exports = {
   info: false,
   clean: false,
   repos: [
-    {
-      url: 'http://oauth2:TFft-SS-Pd1Emh1AJyqi@gitlab.leting.co/leting-web/depend-configs.git',
-      branch: 'master',
-    }
+    // {
+    //   url: 'http://oauth2:TFft-SS-Pd1Emh1AJyqi@gitlab.leting.co/leting-web/depend-configs.git',
+    //   branch: 'master',
+    // }
   ],
 }

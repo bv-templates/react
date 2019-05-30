@@ -23,24 +23,27 @@ module.exports = {
       type: "string",
       message: "Author"
     },
-    eslint: {
+    lint: {
       type: "confirm",
-      message: "Use ESLint to lint your code?"
+      message: "Use ESLint and styleLint to lint your code?"
     },
-    stylelint: {
+    cdn: {
       type: "confirm",
-      message: "Use styleLint to lint your code?"
+      message: "Upload dist to CDN?"
     },
-    prettier: {
+    git: {
       type: "confirm",
-      message: "Use prettier to format your code?"
+      message: "Download modules from your gitlab?"
     },
   },
   filters: {
-    ".eslintrc.js": "eslint",
-    ".eslintignore": "eslint",
-    ".stylelintrc.js": "stylelint",
-    ".prettierrc.js": "prettier"
+    ".eslintrc": "lint",
+    ".eslintignore": "lint",
+    ".stylelintrc": "lint",
+    ".stylelintignore": "lint",
+    ".lintstagedrc": "lint",
+    "cdn.config.js": "cdn",
+    "git.config.js": "git",
   },
   completeMessage: "To get started:\n\n  {{^inplace}}cd {{destDirName}}\n  {{/inplace}}npm install\n  npm start\n\n"
 }

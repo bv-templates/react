@@ -11,9 +11,9 @@
 
 module.exports = {
   cdn: 'qiniu',
-  bucket: 'leting-test',
-  accessKey: '82VX4460Rqik63MdkPyg91BVQmbJgEJsokm3DSaq',
-  secretKey: 'oFWO9mt_dSVkFZLntnABBYSlEqxnWqOWeQEy5vub',
+  bucket: '',
+  accessKey: '',
+  secretKey: '',
   info: true,
   glob: {
     pattern: './dist/**/*.*',
