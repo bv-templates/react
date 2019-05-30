@@ -49,8 +49,8 @@ module.exports = {
     ".lintstagedrc": "lint",
     "cdn.config.js": "cdn",
     "git.config.js": "git",
-    "*.less": "csscompiler === 'Less'",
-    "*.scss": "csscompiler === 'Sass'",
+    "src/**/*.less": "csscompiler === 'Less'",
+    "src/**/*.scss": "csscompiler === 'Sass'",
   },
   completeMessage: "To get started:\n\n  {{^inplace}}cd {{destDirName}}\n  {{/inplace}}npm install\n  npm start\n\n"
 }

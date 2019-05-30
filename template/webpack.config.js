@@ -25,7 +25,7 @@ module.exports = merge(
     },
     module: {
       rules: [
-        // scss样式处理规则
+        // 样式处理规则
         {
           {{#if_eq csscompiler 'Sass'}}
           test: /\.scss$/,
@@ -55,7 +55,6 @@ module.exports = merge(
             {{#if_eq csscompiler 'Less'}}
             'less-loader',
             {{/if_eq}}
-            
           ],
         },
         // js处理规则
