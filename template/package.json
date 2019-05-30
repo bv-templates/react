@@ -16,7 +16,7 @@
     "eslint": "eslint --fix \"./src/**/*.{js,jsx}\"",
     "stylelint": "stylelint --fix \"./src/**/*.{css,scss,less}\"",
     "lint": "npm run eslint && npm run stylelint",
-    "lint-staged": "lint-staged"{{/lint}
+    "lint-staged": "lint-staged"{{/lint}}
   },
   {{#lint}}
   "husky": {
